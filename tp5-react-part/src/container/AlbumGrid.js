@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import Album from '../component/Album';
+import {Container, Col, Row} from 'reactstrap';
+
 
 export default class AlbumGrid extends Component {
   render() {
@@ -12,6 +14,7 @@ export default class AlbumGrid extends Component {
           </a>
         </div>
         <section id="albums">
+        <Row>
           <Album
             image="img/album/album_01.png"
             nom="Native (Deluxe)"
@@ -26,7 +29,7 @@ export default class AlbumGrid extends Component {
           />
           <Album
             image="img/album/album_03.png"
-            nom="Wax Modern Vampires of th..."
+            nom="Wax Modern Vampires"
             artist="Vampire Weekend"
             song={12}
           />
@@ -72,6 +75,7 @@ export default class AlbumGrid extends Component {
             artist="The National"
             song={13}
           />
+          </Row>
         </section>
       </div>
     );

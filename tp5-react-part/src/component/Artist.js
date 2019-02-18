@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import artist from '../img/artist.png';
 import fbLogo from '../img/icon/fb.png';
 import twitterLogo from '../img/icon/twitter.png';
+import {Container, Col, Row} from 'reactstrap';
+
 
 export default class Artist extends Component {
   render() {
@@ -24,20 +26,28 @@ export default class Artist extends Component {
             </p>
           </div>
         </div>
+        
         <div class="stats-links">
+        <Row>
+        <Col xs="auto" md="9">
           <section class="stats">
             <span>2 Playlists</span>
             <span>4 Reviews</span>
             <span>6 Followers</span>
             <span>13 Following</span>
           </section>
+        </Col>
+        <Col xs="auto" md="3">
           <div class="links">
             <div>
               <a href="#">Collection</a>
               <a href="#">History</a>
             </div>
           </div>
+        </Col>
+           </Row>
         </div>
+     
       </header>
     );
   }

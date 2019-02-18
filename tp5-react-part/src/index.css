@@ -190,6 +190,7 @@ input.submit {
 #albums article .count {
   margin-top: 4px;
   white-space: nowrap;
+
   text-overflow: ellipsis;
 }
 
